@@ -5,10 +5,11 @@ const mongoose = require('mongoose')
 const modelo = mongoose.Schema({
     data:Date,
     tipo:String,
+    materia:String,
     entrega: String,
-    disciplina:String,
     instrucoes:String,
-    usuario:String
+    usuario:String,
+    status:{type:Number,default:0}
 })
 
 //gravar a estrutura na model atividades
